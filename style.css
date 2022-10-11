@@ -95,8 +95,16 @@ body {
 }
 
 @media screen and (max-width: 575px) {
+	body {
+		background: url(./images/bg-pattern-top.svg) 140% -350% no-repeat,
+			url(./images/bg-pattern-bottom.svg) -60% 350% no-repeat;
+		background-size: 180%, 180%;
+		background-color: hsl(185, 75%, 39%);
+		background-attachment: fixed, fixed;
+	}
+
 	.wrapper {
 		width: 90%;
-		height: auto;
+		/* height: 60vh; */
 	}
 }
